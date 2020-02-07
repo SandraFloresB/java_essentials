@@ -5,8 +5,7 @@ import libs.Input;
 public class MarioDificilSandra {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 		System.out.println("Indica la altura de la piramide: ");
 		int altura = Input.get_int();
 		int a = 0;
