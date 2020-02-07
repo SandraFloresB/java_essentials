@@ -6,7 +6,7 @@ public class MarioDificilSandra {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Indica la altura de la piramide: ");
+		System.out.print("Indica la altura de la piramide: ");
 		int altura = Input.get_int();
 		int a = 0;
 		String caracteres = "#";
