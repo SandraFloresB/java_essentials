@@ -6,11 +6,26 @@ public class MinimoMonedasSandra {
 
 	public static void main(String[] args) {
 		
-		System.out.print("Cuanto cambio te debo?");
-		double cambio = Input.get_int();
+		System.out.print("Cuantos centavos te debo? ");
+		int cambio = Input.get_int();
+		int[] moneyValue = {25 , 10 , 5, 1};
+		int monedas = 0;
+		int totalMonedas = 0;
 		
+		for (int i = 0; i < moneyValue.length; i++) {
 		
-
+			if (cambio >= moneyValue[i] ) {
+				monedas = cambio / moneyValue[i];
+				cambio = cambio % moneyValue[i];
+				System.out.println(monedas + " monedas de " + moneyValue[i] + "c");
+				totalMonedas = totalMonedas + monedas;
+			} else {
+				System.out.println( "0 monedas de " + moneyValue[i] + "c");
+			}
+		}
+				
+		System.out.println("Total de monedas: " + totalMonedas);
+		
 	}
 
 }
@@ -26,7 +41,7 @@ public class MinimoMonedasSandra {
 //
 //Consideraciones:  
 //25c
-//10c
+//1
 //5c
 //1c
 //
